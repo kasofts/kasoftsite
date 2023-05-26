@@ -1,0 +1,364 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>K & A Software Solution Private Limited</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/button.css' %}">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <div class="container-fluid">
+    <!-- Branding -->
+    <div class="card-group">
+
+      <div class="card" style="border: none ;">
+        <img src="{% static 'images/LOGO.png' %}" class="card-img-top" alt="Brand Logo">
+        <div class="card-body">
+          <h5 class="card-title" align="center" style="font-family: 'Kanit', sans-serif;">Website's And Software Services</h5>
+          <hr>
+          <p class="card-text" align="center">K & A Software Solution Private Limited provides result-oriented and
+            quality IT solutions
+            across
+            the globe.
+            Our business strategists sit down with our clients, understand their needs, and do not stop until we have
+            given our best. Besides, we create, analyze, optimize, and test the application until we are sure of its
+            (app/website) yielding maximum results</p>
+        </div>
+
+        <div class="card-body" align="center">
+          <div class="portbuttonn">
+            <button class="button"><span><a href="/getintouch" style="color: white;">Get in Touch </a></span></button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Navigation bar -->
+      <div class="card" style="border: none ;">
+
+        <nav class="navbar sticky-top navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/index" style="font-family: 'HamletOrNot';"> K & A Soft</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/index">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/website">Website Designing & Maintenance</a></li>
+                    <li><a class="dropdown-item" href="/digital">Digital Marketing</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="/software">Software Development</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Insights
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/client">Client Story</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/getintouch">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about">About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <video playsinline autoplay muted loop class="d-block w-100">
+
+                <source src="{% static 'images/intro.mp4' %}" type="video/mp4" />
+            </div>
+            <div class="carousel-item">
+              <video playsinline autoplay muted loop class="d-block w-100">
+
+                <source src="{% static 'images/intro1.mp4' %}" type="video/mp4" />
+            </div>
+            <div class="carousel-item">
+              <video playsinline autoplay muted loop class="d-block w-100">
+
+                <source src="{% static 'images/intro2.mp4' %}" type="video/mp4" />
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+
+        <!-- Services -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="{% static 'images/4.jpg' %}" class="card-img-top" alt="Website Designing" style="height: 250px;">
+              <div class="card-body">
+                <h5 class="card-title" align="center" style="font-family: 'Kanit', sans-serif;"><a href="/website" style="color:rgb(151, 21, 206)">Website Designing</a></h5>
+                <hr>
+                <p class="card-text" align="center">We create startup websites for various business models. We follow a
+                  unique and modern
+                  way to build websites which will reach your target customers.</p>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="{% static 'images/5.jpg' %}" class="card-img-top" alt="Digital Marketing" style="height: 250px;">
+              <div class="card-body">
+                <h5 class="card-title" align="center" style="font-family: 'Kanit', sans-serif;"><a href="/digital" style="color:rgb(255, 157, 0)">Digital Marketing</a></h5>
+                <hr>
+                </hr>
+                <p class="card-text" align="center">Digital Marketing promote the brands to connect with potential
+                  customers using the internet and other
+                  forms of digital communication.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="{% static 'images/6.jpg' %}" class="card-img-top" alt="Software Development" style="height: 250px;">
+              <div class="card-body">
+                <h5 class="card-title" align="center" style="font-family: 'Kanit', sans-serif;"><a href="/software" style="color:green">Software Development</a></h5>
+                <hr>
+                <p class="card-text" align="center">Our company design, develop and maintain applications, frameworks or
+                  other software
+                  components for businesses or consumers.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- OUR TEAM -->
+
+    <div class="container-fluid">
+      <h1 align="center" style="font-family: 'HamletOrNot';">Our Team</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="{% static 'images/ayush.jpeg' %}" class="card-img-top" alt="Founder" height="430px">
+            <div class="card-body">
+              <h3 class="card-title" align="center" style="font-family: 'Kanit', sans-serif;"> Ayush Anand</h3>
+              <hr>
+              <h5 class="card-title" align="center" style="font-family: 'Kanit', sans-serif;"> Founder </h5>
+              <p class="card-text" align="center">Innovative & professional experience in Web Designing and Development
+                across the
+                industries. Proficient in developing user interfaces with Dynamic functionality of website/ Responsive
+                Websites.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="{% static 'images/ali.jpeg' %}" class="card-img-top" alt="CEO" height="430px">
+            <div class="card-body">
+              <h3 class="card-title" align="center" style="font-family: 'Kanit', sans-serif;"> Ali Hussain</h3>
+              <hr>
+              <h5 class="card-title" align="center" style="font-family: 'Kanit', sans-serif;"> CEO </h5>
+              <p class="card-text" align="center">Data Scientist who is passionate for Data Integrity, Machine Learning
+                and AI. Excited to apply My Data Science knowledge to acheive company goals and team focused on
+                insightful, high quality data analytics.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="{% static 'images/kartik.jpeg' %}" class="card-img-top" alt="Founder" height="430px">
+            <div class="card-body">
+              <h3 class="card-title" align="center" style="font-family: 'Kanit', sans-serif;"> Kartik Patel</h3>
+              <hr>
+              <h5 class="card-title" align="center" style="font-family: 'Kanit', sans-serif;"> Co-Founder </h5>
+              <p class="card-text" align="center">Highly Passionate, Professional experience in python technology/
+                E-commerce website/
+                SEO for developing Software Applications across IT Industries.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="https://www.facebook.com/profile.php?id=100092858114089" class="me-4 link-grayish"><img src="{% static 'images/fbicon.jpg' %}"
+              height="40px" width="40px">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/KA_Softs" class="me-4 link-grayish"><img src="{% static 'images/ticon.png' %}"
+              height="40px" width="40px">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="mailto:kasoftsolution@gmail.com" class="me-4 link-grayish"><img src="{% static 'images/gicon.jpg' %}" height="40px"
+              width="40px">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="https://www.instagram.com/kasoftsolution/" class="me-4 link-grayish"><img src="{% static 'images/iicon.jpg' %}"
+              height="40px" width="40px">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/k-a-software-solutions-pvt-ltd/" class="me-4 link-grayish"><img
+              src="{% static 'images/licon.png' %}" height="40px" width="40px">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <!--badge-->
+
+
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4" style="font-family: 'HamletOrNot';">
+                <i class="fas fa-gem me-3 text-grayish"></i>K & A Software Solutions
+              </h6>
+              <p>
+                K & A Software Solutions Private Limited is an IT company based out of India helping business in Digital
+                transformation
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4" style="font-family: 'HamletOrNot';">
+                Services
+              </h6>
+              <p>
+                <a href="/website" class="text-reset">Website Designing & Maintenance</a>
+              </p>
+              <p>
+                <a href="/digital" class="text-reset">Digital Marketing</a>
+              </p>
+              <p>
+                <a href="/software" class="text-reset">Software Development</a>
+              </p>
+              <p>
+                Photo/Video Editing
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4" style="font-family: 'HamletOrNot';">
+                Useful links
+              </h6>
+              <p>
+                <a href="/index" class="text-reset">Home</a>
+              </p>
+              <p>
+                <a href="/client" class="text-reset">Client Reviews</a>
+              </p>
+              <p>
+                <a href="/getintouch" class="text-reset">Contact Us</a>
+              </p>
+              <p>
+                <a href="/about" class="text-reset">About Us</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4" style="font-family: 'HamletOrNot';">Contact</h6>
+              <p><i class="fas fa-home me-3 text-grayish"></i>17th Cross Road, NGR Layout, Roopena Agrahara, Bangalore,
+                Karnataka - 560068</p>
+              <p>
+                <i class="fas fa-envelope me-3 text-grayish"></i>
+                kasoftsolution@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3 text-grayish"></i> + 91 - 7803065319</p>
+              <p><i class="fas fa-print me-3 text-grayish"></i> + 91 - 7000152848</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="/index" style="font-family: 'HamletOrNot';">K & A Software solutions
+          Private Limited</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>

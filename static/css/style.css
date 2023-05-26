@@ -1,0 +1,158 @@
+
+.side-bar {
+    position: fixed;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    color: whitesmoke;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+     z-index: 10;
+  }
+  
+  blockquote{
+    text-align: justify;
+    background-color: #F7EAE9;
+                        border-radius: 4px;
+                        margin-right: 25px;}
+  cite{
+    margin-left: 15px;}
+  blockquote {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-style: italic;
+  width: 100%;
+  margin: 0.25em 0;
+  padding: 0.35em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+  }
+  
+  blockquote:before {
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #7a7a7a;
+  }
+  
+  blockquote cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+  }
+  
+  blockquote cite:before {
+  content: "\2014 \2009";
+  }
+  
+  h3 {
+    font-family: Josefin Sans;
+  }
+  
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+  
+    .overlay a {
+        font-size: 20px
+    }
+  
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .fb {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .gmail {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .insta {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .portfolio-btn {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #1db096;
+    border-radius: 20px;
+    box-shadow: 4px 10px 30px rgba(24, 139, 119, 0.2);
+    text-decoration: none;
+  }
+  
+  .portbutton {
+    float: left;
+  }
+  
+  
+  

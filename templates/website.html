@@ -1,0 +1,416 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>K & A Software Solution Private Limited</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+
+  <!-- TOP NAVIGATION BAR-->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/index">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/website">Website Designing & Maintenance</a></li>
+            <li><a class="dropdown-item" href="/digital">Digital Marketing</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="/software">Software Development</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Insights
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/client">Client Story</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/getintouch">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+    <h3 align="center">&#9776;<img src="{% static 'images/LOGO.png' %}" height="200px"></h3>
+  </span>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
+
+  <!-- Carousel -->
+
+  <div class="container-fluid">
+    <video style="min-width: 100%; min-height: 100%" playsinline autoplay muted loop class="d-block w-100">
+
+      <source class="h-100" src="{% static 'images/website.mp4' %}" type="video/mp4" />
+
+  </div>
+  <br>
+  <br>
+
+  <!--Details-->
+  <div class="card-group">
+    <div class="card" style="border-style: none;">
+      <img src="{% static 'images/web.jpg' %}" class="card-img-top" alt="website development" style="border-radius: 400px;">
+    </div>
+    <div class="card" style="border-style: none;">
+      <div class="card-body" align="center">
+        <h1 class="card-title" style="font-family: 'Kanit', sans-serif;">Website Development</h1>
+        <p class="card-text" style="font-family: 'Kanit', sans-serif;
+        font-family: 'Nanum Gothic', sans-serif;">Our Website Development comes with intuitive and
+          creative design thought, and cutting edge
+          technology. We take-up challenges and bring your dream website to life as visually stunning design. Those days
+          are gone when website were merely a brochure uploaded online. It's an extension of your brand-identity today
+          and are apparatuses to increase business online. Whether you need to build a website from scratch, redesign an
+          existing website or develop a mobile website, we can execute all this and more. We help you in designing a
+          creative website with responsive design that is flexible across all the smart devices and provides the visitor
+          a rich user experience, no matter how large or small their display.</p>
+        <br>
+        <p class="card-text" style="font-family: 'Kanit', sans-serif;
+        font-family: 'Nanum Gothic', sans-serif;">At K & A Soft, our Web Designers and Developers are dedicated
+          to producing quality business websites. We offer a full Web Service, which begins with Web Design till Web
+          Hosting. The latest technologies and design are blended seamlessly to carve a niche for your business
+          globally. We give you the edge over your competitor for success by creating simple yet user friendly website.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <!--technology-->
+  
+    <br>
+    <h2 align="center" style="font-family: 'Kanit', sans-serif;">The Platforms we work on</h2>
+    <h5 align="center">We work on multi-functional platforms to give you user appreciating and result driven websites.
+    </h5>
+    <br>
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card" style="border-style: none; border-radius: 40px;">
+            <div class="card mb-3" style="max-width: 100%; border-style: none; border-radius: 40px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="{% static 'images/HTML5Logo.png' %}" class="img-fluid rounded-start" alt="HTML5">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body" align="center">
+                    <h5 class="card-title">HTML5</h5>
+                    <p class="card-text">An open sourced program that is simple to configure supporting major websites
+                      and can be integrated with other programming languages.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="border-style: none; border-radius: 40px;">
+            <div class="card mb-3" style="max-width: 100%; border-style: none; border-radius: 40px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="{% static 'images/css.png' %}" class="img-fluid rounded-start" alt="CSS3">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body" align="center">
+                    <h5 class="card-title">CSS 3</h5>
+                    <p class="card-text">Cascading Style Sheets Level 3 (CSS3) is the iteration of the CSS standard used
+                      in the styling and formatting of Web pages. CSS3 incorporates the CSS2 standard with some changes
+                      and improvements.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="border-style: none; border-radius: 40px;">
+            <div class="card mb-3" style="max-width: 100%; border-style: none; border-radius: 40px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="{% static 'images/Bootstrap.png' %}" class="img-fluid rounded-start" alt="Bootstrap">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body" align="center">
+                    <h5 class="card-title">Bootstrap 5.2</h5>
+                    <p class="card-text"> Bootstrap has become one of the most popular front-end frameworks and open
+                      source projects in the world. It helps us in making the website responsive.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="border-style: none; border-radius: 40px;">
+            <div class="card mb-3" style="max-width: 100%; border-style: none; border-radius: 40px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="{% static 'images/javascript.png' %}" class="img-fluid rounded-start" alt="javascript">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body" align="center">
+                    <h5 class="card-title">Javascript</h5>
+                    <p class="card-text">JavaScript is a scripting or programming language that allows you to implement
+                      complex features on web pages — every time a web page does more than just sit there and display
+                      static information for you to look at — displaying timely content updates, interactive maps,
+                      animated 2D/3D graphics, scrolling video jukeboxes, etc. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="border-style: none; border-radius: 40px;">
+            <div class="card mb-3" style="max-width: 100%; border-style: none; border-radius: 40px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="{% static 'images/python.png' %}" class="img-fluid rounded-start" alt="Python">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body" align="center">
+                    <h5 class="card-title">Python</h5>
+                    <p class="card-text"> Python is commonly used for developing websites and software, task automation,
+                      data analysis, and data visualization.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="border-style: none; border-radius: 40px;">
+            <div class="card mb-3" style="max-width: 100%; border-style: none; border-radius: 40px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="{% static 'images/java.png' %}" class="img-fluid rounded-start" alt="java">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body" align="center">
+                    <h5 class="card-title">Java</h5>
+                    <p class="card-text"> Sun Java Studio Enterprise IDE is a powerful set of tools that provides an
+                      integrated framework for enterprise-grade, rapid web application development. It offers enhanced
+                      debugging and development support for web services and for development of Java EE technology-based
+                      applications.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="border-style: none; border-radius: 40px;">
+            <div class="card mb-3" style="max-width: 100%; border-style: none; border-radius: 40px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="{% static 'images/django.png' %}" class="img-fluid rounded-start" alt="django">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body" align="center">
+                    <h5 class="card-title">Django </h5>
+                    <p class="card-text"> Django is a high-level Python web framework that enables rapid development of
+                      secure and maintainable websites. Built by experienced developers, Django takes care of much of
+                      the hassle of web development, so you can focus on writing your app without needing to reinvent
+                      the wheel.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="border-style: none; border-radius: 40px;">
+            <div class="card mb-3" style="max-width: 100%; border-style: none; border-radius: 40px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="{% static 'images/angular.png' %}" class="img-fluid rounded-start" alt="angular">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body" align="center">
+                    <h5 class="card-title">Angular</h5>
+                    <p class="card-text"> Angular is a development platform, built on TypeScript. As a platform, Angular
+                      includes: A component-based framework for building scalable web applications. A collection of
+                      well-integrated libraries that cover a wide variety of features, including routing, forms
+                      management, client-server communication, and more.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+ <!-- FOOTER -->
+ <footer class="text-center text-lg-start bg-white text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="https://www.facebook.com/profile.php?id=100092858114089" class="me-4 link-grayish"><img src="{% static 'images/fbicon.jpg' %}"
+          height="40px" width="40px">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com/KA_Softs" class="me-4 link-grayish"><img src="{% static 'images/ticon.png' %}"
+          height="40px" width="40px">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="mailto:kasoftsolution@gmail.com" class="me-4 link-grayish"><img src="{% static 'images/gicon.jpg' %}" height="40px"
+          width="40px">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="https://www.instagram.com/kasoftsolution/" class="me-4 link-grayish"><img src="{% static 'images/iicon.jpg' %}"
+          height="40px" width="40px">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/k-a-software-solutions-pvt-ltd/" class="me-4 link-grayish"><img
+          src="{% static 'images/licon.png' %}" height="40px" width="40px">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <!--badge-->
+
+
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4" style="font-family: 'HamletOrNot';">
+            <i class="fas fa-gem me-3 text-grayish"></i>K & A Software Solutions
+          </h6>
+          <p>
+            K & A Software Solutions Private Limited is an IT company based out of India helping business in Digital
+            transformation
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4" style="font-family: 'HamletOrNot';">
+            Services
+          </h6>
+          <p>
+            <a href="/website" class="text-reset">Website Designing & Maintenance</a>
+          </p>
+          <p>
+            <a href="/digital" class="text-reset">Digital Marketing</a>
+          </p>
+          <p>
+            <a href="/software" class="text-reset">Software Development</a>
+          </p>
+          <p>
+            Photo/Video Editing
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4" style="font-family: 'HamletOrNot';">
+            Useful links
+          </h6>
+          <p>
+            <a href="/index" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="/client" class="text-reset">Client Reviews</a>
+          </p>
+          <p>
+            <a href="/getintouch" class="text-reset">Contact Us</a>
+          </p>
+          <p>
+            <a href="/about" class="text-reset">About Us</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4" style="font-family: 'HamletOrNot';">Contact</h6>
+          <p><i class="fas fa-home me-3 text-grayish"></i>17th Cross Road, NGR Layout, Roopena Agrahara, Bangalore,
+            Karnataka - 560068</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-grayish"></i>
+            kasoftsolution@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-grayish"></i> + 91 - 7803065319</p>
+          <p><i class="fas fa-print me-3 text-grayish"></i> + 91 - 7000152848</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="/index" style="font-family: 'HamletOrNot';">K & A Software Solutions
+      Private Limited</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+
+</html>
